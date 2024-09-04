@@ -1,0 +1,292 @@
+body{
+    background-color:  #1f0d06 !important;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+}
+.navbar{
+    background-color:  #1f0d06;
+}
+.navbar-brand {
+    height: 50px;
+}
+
+    .custom-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 125%;         background-color: #1f0d06 ;
+        padding-top: 50px;
+      }
+      @media (max-width: 1140px) {
+        
+        .custom-img {
+          width: 100%; 
+          height: auto;
+        }
+      }
+      .image-container {
+        position: relative; /* Positioning context for the button */
+        display: inline-block; /* Keeps image and button in the same container */
+        width: 100%; /* Set the container width as needed */
+      }
+    
+      .btn-inside-image {
+        position: absolute; /* Positioning relative to the image container */
+        top: 79%; /* Vertical center */
+        left: 25%; /* Horizontal center */
+        transform: translate(-50%, -50%);
+        width: 100%;
+        max-width: 300px; /* Center the button */
+        border-radius: 20px;
+      }
+
+      @media (max-width: 767px) { /* For screens smaller than 768px (e.g., phones) */
+        .btn-inside-image {
+            position: static; /* Remove absolute positioning */
+            transform: none; /* Remove transform effect */
+            display: block; /* Ensure the button is block-level for proper spacing */
+            margin: 20px auto; /* Center the button and add margin */
+            width: 200px; /* Make the button width fit its content */
+        }
+    }
+  .bites-of-fantasy {
+    margin-left: 250px;
+  }
+ 
+  @media (max-width:767px){
+    .bites-of-fantasy{
+        margin-left: 10px;
+    }
+  }
+  .s{
+    gap:100px;
+  }
+  .s button{
+    background-color: transparent;
+    color: white;
+    border-radius: 25px;
+    height: 50px;
+    width: 100px;
+    border: solid 1px ;
+  }
+  .fantasy-bars{
+    
+     color: #fff2b7;
+  }
+  @media (max-width:767px){
+    .fantasy-bars{
+        width: 300px;
+    }
+  }
+  @media (max-width:767px){
+    .s p{
+      font-size: 20px !important;
+    }
+    .s{
+      gap: 10px !important;
+    }
+    .s button{
+      height: 30px;
+      width: 50px;
+    }
+  }
+  .s p{
+    font-size: 25px;
+  }
+    /* scrolling img */
+  .carsoule-img{
+    display: flex;
+  }
+  .gallery{
+    width: 900px;
+    display: flex;
+    overflow-x: scroll;
+  }
+  .gallery div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+  }
+  .gallery div img{
+    width: 100%;
+  }
+  .gallery::-webkit-scrollbar{
+    display: none;
+  }
+  .gallery-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto ;
+  }
+  #backBtn {
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+  }
+  #nextBtn{
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+  }
+   /* scrolling img */
+  .center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+  .center-container button{
+    position: relative;
+    bottom: 150px;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+  }
+  @media (max-width:992px){
+    .center-container button{
+       bottom: 10px;
+    }
+  }
+  .vedio-bar iframe{
+    width:800px;
+     height:520px;
+  }
+  @media (max-width:768px){
+    .vedio-bar iframe{
+      height: 200px ;
+      width: 300px ;
+    }
+  }
+  
+  .second-home img{
+    /* position: absolute; */
+    width: 90%;
+    
+    
+    height: 500px;
+  }
+  @media (max-width:768px){
+    .second-home img{
+      width: 90%;
+      height: 200px;
+      /* position: relative; */
+      left: 15px;
+    }
+  }
+  .second-home-text {
+   position: absolute;
+   color: #f4da66;
+      z-index: 1;
+   /* margin-left: 300px; */
+  }
+  .second-home h2{
+    position: absolute;
+    color: #f4da66;
+    margin-top: 90px;
+    z-index: 1;
+    /* margin-left: 300px; */
+   }
+
+  @media (max-width:768px){
+   .second-home-text{
+    font-size: 15px;
+    padding-top: 10px;
+     }
+  }
+  .second-home-text {
+    position: absolute;
+    color: #f4da66;
+    margin-top: 200px;
+    z-index: 1;
+    /* margin-left: 300px; */
+  }
+  .second-home form{
+    padding-top: 200px;
+
+  }
+  input[type="radio"] {
+    transform: scale(2.5); /* Scale the radio button size */
+    margin: 10px; /* Add some margin for spacing */
+    margin-left: 100px;
+  }
+@media (max-width:768px){
+  input[type="radio"] {
+    transform: scale(1.5); /* Scale the radio button size */
+    margin: 10px; /* Add some margin for spacing */
+    margin-left: 30px;
+    position: relative;
+    bottom: 100px;
+    
+}
+}
+.radio-class {
+  border: 1px solid goldenrod;
+  color: yellow;
+}
+@media (max-width:768px){
+  .second-home-text{
+   margin-top: 50px;
+   font-size: 10px;
+  }
+}
+@media (max-width:768px){
+  .second-home h2{
+      margin-top: 100px;
+     font-size: 10px;
+  }
+}
+.cookie{
+  height: 900px;
+  background-color: #fff2b7;
+}
+/* scrolling img*/
+.gallery{
+  width: 900px;
+  display: flex;
+  overflow-x: scroll;
+}
+.gallery div{
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  padding: 10px;
+  flex: none;
+}
+.gallery div img{
+  width: 100%;
+}
+.gallery::-webkit-scrollbar{
+  display: none;
+}
+.gallery-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10% auto ;
+}
+#backBtn {
+  width: 50px;
+  cursor: pointer;
+  margin: 40px;
+}
+#nextBtn{
+  width: 50px;
+  cursor: pointer;
+  margin: 40px;
+}
+/** java script **/
+
+
+
+  
+  
+  
+
